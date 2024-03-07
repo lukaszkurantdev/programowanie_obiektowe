@@ -1,6 +1,6 @@
 import java.util.Locale;
 
-public class Polygon {
+public class Polygon extends Shape {
     private Point[] arr;
     Style style;
 
@@ -26,5 +26,8 @@ public class Polygon {
                 "<polygon points=\"%s\"%s />", pointsString, style.toSvg());
     }
 
+    static Polygon sqare() {
+
+    }
 
 }
