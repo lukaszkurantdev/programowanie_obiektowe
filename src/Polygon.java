@@ -1,35 +1,35 @@
 import java.util.Locale;
 
-public class Polygon extends Shape {
-    private Point[] arr;
-
+public class Polygon implements Shape {
+    private Vec2[] arr;
+    private Style style;
 
     public Polygon(int count, Style style) {
-        super(style);
-        arr = new Point[count];
+        this.style = style;
+        arr = new Vec2[count];
     }
 
-    public void setPoint(int index, Point point) {
+    public void setPoint(int index, Vec2 point) {
         arr[index] = point;
     }
 
-    public void setPoints(Point[] points){
+    public void setPoints(Vec2[] points){
         arr = points;
     }
 
-    public String toSvg() {
+    public String toSvg(String parameters) {
         String pointsString = "";
-        for(Point point : arr)
+        for(Vec2 point : arr)
             pointsString += point.x + "," + point.y + " ";
 
         return String.format(Locale.ENGLISH,"" +
-                "<polygon points=\"%s\"%s />", pointsString, style.toSvg());
+                "<polygon points=\"%s\" %s />", pointsString, parameters);
     }
 
     static Polygon sqare(Segment line, Style style) {
         double x = (line.getP1().x + line.getP2().x) / 2;
         double y = (line.getP1().y + line.getP2().y) / 2;
-        Point center = new Point(x, y);
+        Vec2 center = new Vec2(x, y);
         Segment[] secondLine = Segment.perpendicular(line, center, line.getDistance() / 2);
 
         Polygon polygon = new Polygon(4, style);

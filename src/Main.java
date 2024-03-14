@@ -4,18 +4,17 @@
 
 public class Main {
     public static void main(String[] args) {
-        Style style = new Style("lime", "red", null);
-        Point point1 = new Point(0, 100);
-        Point point2 = new Point(100, 102);
+        Vec2 point1 = new Vec2(0, 100);
+        Vec2 point2 = new Vec2(100, 102);
+        Vec2 point3 = new Vec2(50, 50);
 
-        Segment line = new Segment(point1, point2);
-        Polygon polygon = Polygon.sqare(line, style);
-
-        Ellipse ellipse = new Ellipse(new Point(150, 200), 20, 30, style);
+        SolidFilledPolygon solidFilledPolygon = new SolidFilledPolygon(3, "red");
+        solidFilledPolygon.setPoint(0, point1);
+        solidFilledPolygon.setPoint(1, point2);
+        solidFilledPolygon.setPoint(2, point3);
 
         SvgScene svgScene = new SvgScene();
-        svgScene.addShape(polygon);
-        svgScene.addShape(ellipse);
+        svgScene.addShape(solidFilledPolygon);
         svgScene.saveHtml("./test.html");
     }
 }
