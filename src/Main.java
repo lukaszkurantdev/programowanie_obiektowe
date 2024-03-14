@@ -18,8 +18,15 @@ public class Main {
 
         Shape filledPolygon = new SolidFilledShapeDecorator(polygon, "blue");
 
+        Shape transformedPolygon = new TransformationDecorator
+                .Builder()
+                .setShape(filledPolygon)
+                .setTranslateVector(point3)
+                .setTranslateVector(point3)
+                .build();
+
         SvgScene svgScene = new SvgScene();
-        svgScene.addShape(filledPolygon);
+        svgScene.addShape(transformedPolygon);
         svgScene.saveHtml("./test.html");
     }
 }
