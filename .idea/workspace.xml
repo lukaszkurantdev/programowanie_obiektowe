@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25bd8a96-2b38-4010-a242-30a457299cd3" name="Changes" comment="Z2">
-      <change afterPath="$PROJECT_DIR$/src/TransformationDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="25bd8a96-2b38-4010-a242-30a457299cd3" name="Changes" comment="Z4" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710430020136</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Z4">
+      <option name="closed" value="true" />
+      <created>1710432660195</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1710432660195</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -150,7 +155,8 @@
     <MESSAGE value="Examples 3-5" />
     <MESSAGE value="Z1" />
     <MESSAGE value="Z2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Z2" />
+    <MESSAGE value="Z4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Z4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
