@@ -1,0 +1,12 @@
+imię i nazwisko,data urodzenia,data śmierci,rodzic,rodzic
+Marek Kowalski,15.05.1899,25.06.1957,,
+Ewa Kowalska,03.11.1901,05.03.1990,,
+Anna Dąbrowska,07.02.1930,22.12.1991,Ewa Kowalska,Marek Kowalski
+Andrzej Kowalski,12.09.1936,25.06.1990,Ewa Kowalska,Marek Kowalski
+Krystyna Dąbrowska,25.06.1927,08.04.1940,Ewa Kowalska,Marek Kowalski
+Alicja Wiśniewska,18.10.1963,18.10.2012,Anna Dąbrowska,
+Tomasz Dąbrowski,24.01.1966,,Anna Dąbrowska,
+Joanna Nowak,08.04.1973,,,Andrzej Kowalski
+Kacper Kowalski,15.07.1970,,,Andrzej Kowalski
+Elżbieta Kowalska,28.12.1990,,,Kacper Kowalski
+Jan Kowalski,05.03.1992,,,Kacper Kowalski
