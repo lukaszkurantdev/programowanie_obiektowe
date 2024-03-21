@@ -40,11 +40,33 @@ public class Person {
         line = reader.readLine();
         while(line != null)
         {
-                list.add(fromCsvLine(line));
-                line = reader.readLine();
+            Person person = fromCsvLine(line);
+            try {
+                person.checkAmbiguousPersonException(list);
+                person.checkLifespan();
+            } catch (NegativeLifespanException | AmbiguousPersonException e) {
+               System.out.println(e.getMessage());
+            }
+
+            list.add(person);
+
+            line = reader.readLine();
         }
         return list;
     }
 
+    public void checkLifespan() throws NegativeLifespanException {
+        if(deathDate != null && deathDate.isBefore(birthDate)) {
+            throw new NegativeLifespanException(this);
+        }
+    }
+
+    public void checkAmbiguousPersonException(List<Person> list) throws AmbiguousPersonException {
+        for(Person person: list) {
+            if(person.name.equals(this.name)) {
+                throw new AmbiguousPersonException(this);
+            }
+        }
+    }
 
 }
