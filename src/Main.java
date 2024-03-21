@@ -40,5 +40,17 @@ public class Main {
 //            throw new RuntimeException(e);
 //        }
 
+        List<Person> list;
+        try {
+            list = Person.fromCsv("family.csv");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        for (Person person : list)
+        {
+            System.out.println(person.name);
+        }
+
     }
 }
