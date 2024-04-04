@@ -3,6 +3,7 @@ import java.io.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
+import java.util.function.Function;
 
 public class Person implements Serializable {
     public final String name;
@@ -109,4 +110,28 @@ public class Person implements Serializable {
             return (List<Person>) ois.readObject();
         }
     }
+
+    public String toUML() {
+        StringBuilder objects = new StringBuilder();
+        StringBuilder relations = new StringBuilder();
+
+        Function<String, String> replaceSpaces = str -> str.replaceAll(" ", "");
+
+        objects.append("object " + replaceSpaces.apply(name) + "\n");
+
+        for(Person parent : parents) {
+            objects.append("object " +  replaceSpaces.apply(parent.name) + "\n");
+            relations.append(replaceSpaces.apply(name) + " <-- " +  replaceSpaces.apply(parent.name) + "\n");
+        }
+
+        return String.format(
+                "@startuml\n%s\n%s\n@enduml",
+                objects,
+                relations
+        );
+    }
+
+//    public static String toUML(List<Person> people) {
+//
+//    }
 }

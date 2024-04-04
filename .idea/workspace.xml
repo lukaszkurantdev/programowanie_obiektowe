@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25bd8a96-2b38-4010-a242-30a457299cd3" name="Changes" comment="Post lab4">
-      <change afterPath="$PROJECT_DIR$/plantuml-1.2024.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PlantUMLRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
+    <list default="true" id="25bd8a96-2b38-4010-a242-30a457299cd3" name="Changes" comment="Lab5 z1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/family.bin" beforeDir="false" afterPath="$PROJECT_DIR$/family.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712207793772</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Lab5 z1">
+      <created>1712238382351</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712238382351</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -220,22 +224,7 @@
     <MESSAGE value="lab4 z1" />
     <MESSAGE value="lab4 z2" />
     <MESSAGE value="Post lab4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Post lab4" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Person.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Person.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Lab5 z1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab5 z1" />
   </component>
 </project>
