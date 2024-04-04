@@ -131,7 +131,25 @@ public class Person implements Serializable {
         );
     }
 
-//    public static String toUML(List<Person> people) {
-//
-//    }
+    public static String toUML(List<Person> people) {
+        Set<String> objects = new HashSet<>();
+        Set<String> relations = new HashSet<>();
+
+        Function<String, String> replaceSpaces = str -> str.replaceAll(" ", "");
+
+        for(Person person : people) {
+            objects.add("object " + replaceSpaces.apply(person.name));
+
+            for(Person parent : person.parents) {
+                objects.add("object " +  replaceSpaces.apply(parent.name));
+                relations.add(replaceSpaces.apply(person.name) + " <-- " +  replaceSpaces.apply(parent.name) + "\n");
+            }
+        }
+
+        return String.format(
+                "@startuml\n%s\n%s\n@enduml",
+                String.join("\n", objects),
+                String.join("", relations)
+        );
+    }
 }

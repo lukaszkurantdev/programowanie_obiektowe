@@ -11,9 +11,12 @@ public class Main {
             for(Person person: people)
                 System.out.println(person);
 
-            Person person = people.get(2);
-            String uml = person.toUML();
-            PlantUMLRunner.generate(uml, "uml", person.name);
+            String uml = Person.toUML(people);
+            PlantUMLRunner.generate(uml, "uml", "family");
+
+//            Person person = people.get(2);
+//            String uml = person.toUML();
+//            PlantUMLRunner.generate(uml, "uml", person.name);
 
         } catch (IOException e) {
             throw new RuntimeException(e);
