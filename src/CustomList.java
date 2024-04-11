@@ -1,5 +1,7 @@
 import java.util.AbstractList;
+import java.util.Iterator;
 import java.util.NoSuchElementException;
+import java.util.stream.Stream;
 
 public class CustomList<T> extends AbstractList<T> {
     class Node {
@@ -87,49 +89,76 @@ public class CustomList<T> extends AbstractList<T> {
 
 
     }
-public T getFirst() {
-    if(start == null) {
-        throw new NoSuchElementException();
-    }
-    return start.value;
 
-
-}
-
-public T removeFirst() {
-    if (start == null) {
-        throw new NoSuchElementException();
-    }
-    T startValue = start.value;
-    if(start == end) {
-        start = null;
-        end = null;
-        return startValue;
-    } else {
-        start = start.next;
-        return startValue;
-    }
-}
-
-public T removeLast() {
-    if (start == null) {
-        throw new NoSuchElementException();
-    }
-    T endValue = end.value;
-    if(start == end) {
-        start = null;
-        end = null;
-        return endValue;
-    } else {
-        Node temp = start;
-        while(temp.next != end) {
-            temp = temp.next;
+    public T getFirst() {
+        if(start == null) {
+            throw new NoSuchElementException();
         }
-        temp.next = null;
-        end = temp;
-    }
-    return endValue;
-    }
+        return start.value;
 
 
+    }
+
+    public T removeFirst() {
+        if (start == null) {
+            throw new NoSuchElementException();
+        }
+        T startValue = start.value;
+        if(start == end) {
+            start = null;
+            end = null;
+            return startValue;
+        } else {
+            start = start.next;
+            return startValue;
+        }
+    }
+
+    public T removeLast() {
+        if (start == null) {
+            throw new NoSuchElementException();
+        }
+        T endValue = end.value;
+        if(start == end) {
+            start = null;
+            end = null;
+            return endValue;
+        } else {
+            Node temp = start;
+            while(temp.next != end) {
+                temp = temp.next;
+            }
+            temp.next = null;
+            end = temp;
+        }
+        return endValue;
+    }
+
+    public Iterator<T> iterator() {
+        return new Iterator<T>() {
+            Node temp = start;
+
+            @Override
+            public boolean hasNext() {
+                return temp != null;
+            }
+
+            @Override
+            public T next() {
+                T value = temp.value;
+                temp = temp.next;
+                return value;
+            }
+        };
+    }
+
+    public Stream<T> stream() {
+        Stream.Builder<T> streamBuilder = Stream.builder();
+
+        for(T item : this) {
+            streamBuilder.accept(item);
+        }
+
+        return streamBuilder.build();
+    }
 }
