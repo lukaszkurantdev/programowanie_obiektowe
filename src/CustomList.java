@@ -14,14 +14,42 @@ public class CustomList<T> extends AbstractList<T> {
         start = end = null;
     }
 
+    public boolean add(T t) {
+        addLast(t);
+        return true;
+    }
+
     @Override
     public int size() {
-        return 0;
+        if(start == null)
+            return 0;
+        else
+        {
+            int i = 1;
+            Node temp = start;
+            while(temp != end)
+            {
+                temp = temp.next;
+                i++;
+            }
+            return i;
+        }
     }
 
     @Override
     public T get(int i) {
-        return null;
+        if(start == null)
+            throw new NoSuchElementException();
+
+        if(size() <= i)
+            throw new NoSuchElementException();
+
+        Node temp = start;
+        for(int j = 0; j<i; j++)
+        {
+            temp = temp.next;
+        }
+        return temp.value;
     }
 
     public void addLast(T value) {
@@ -102,4 +130,6 @@ public T removeLast() {
     }
     return endValue;
     }
+
+
 }
