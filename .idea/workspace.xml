@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25bd8a96-2b38-4010-a242-30a457299cd3" name="Changes" comment="pre lab7">
-      <change afterPath="$PROJECT_DIR$/src/DeathCauseStatistics.java" afterDir="false" />
+    <list default="true" id="25bd8a96-2b38-4010-a242-30a457299cd3" name="Changes" comment="z1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -254,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713439501302</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="z1">
+      <option name="closed" value="true" />
+      <created>1713448840254</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1713448840254</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,6 +293,7 @@
     <MESSAGE value="lab6 z2" />
     <MESSAGE value="post lab6" />
     <MESSAGE value="pre lab7" />
-    <option name="LAST_COMMIT_MESSAGE" value="pre lab7" />
+    <MESSAGE value="z1" />
+    <option name="LAST_COMMIT_MESSAGE" value="z1" />
   </component>
 </project>

@@ -24,4 +24,26 @@ public class DeathCauseStatistics {
         }
         return new DeathCauseStatistics(deaths, ICD);
     }
+
+    public class AgeBracketDeaths {
+        public final int young, old, deathCount;
+
+        public AgeBracketDeaths(int young, int old, int deathCount) {
+            this.young = young;
+            this.old = old;
+            this.deathCount = deathCount;
+        }
+    }
+
+    public AgeBracketDeaths bracketDeaths(int age) {
+        int young = age/5 * 5;
+        int old;
+        if(young >= 95) {
+            old = Integer.MAX_VALUE;
+        } else {
+            old = age + 4;
+        }
+        int deathCount = this.deathCount[age/5];
+        return new AgeBracketDeaths(young, old, deathCount);
+    }
 }
