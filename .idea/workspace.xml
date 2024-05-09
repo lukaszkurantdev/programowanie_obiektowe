@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25bd8a96-2b38-4010-a242-30a457299cd3" name="Changes" comment="z1f-g">
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/umcs/oop/music/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/umcs/oop/music/Playlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/umcs/oop/music/PlaylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/umcs/oop/music/PlaylistTest.java" afterDir="false" />
+    <list default="true" id="25bd8a96-2b38-4010-a242-30a457299cd3" name="Changes" comment="z2a">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/umcs/oop/music/SongTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +52,7 @@
     "JUnit.PlaylistTest.ifHasSameSong.executor": "Run",
     "JUnit.PlaylistTest.testIfNewPlaylistIsEmpty.executor": "Run",
     "JUnit.PlaylistTest.testIfPlaylistHasOneSong.executor": "Run",
+    "JUnit.SongTest.testCorrectIndex.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
@@ -77,7 +78,7 @@
       <recent name="pl.umcs.oop.music" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlaylistTest.atSecondThrowExceptionWhenNumberIsNegative">
+  <component name="RunManager" selected="JUnit.SongTest.testCorrectIndex">
     <configuration name="PlaylistTest.atSecond" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="site" />
       <extension name="coverage">
@@ -142,7 +143,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaylistTest.testIfPlaylistHasOneSong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SongTest.testCorrectIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="site" />
       <extension name="coverage">
         <pattern>
@@ -151,8 +152,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.umcs.oop.music" />
-      <option name="MAIN_CLASS_NAME" value="pl.umcs.oop.music.PlaylistTest" />
-      <option name="METHOD_NAME" value="testIfPlaylistHasOneSong" />
+      <option name="MAIN_CLASS_NAME" value="pl.umcs.oop.music.SongTest" />
+      <option name="METHOD_NAME" value="testCorrectIndex" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -160,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SongTest.testCorrectIndex" />
         <item itemvalue="JUnit.PlaylistTest.atSecondThrowExceptionWhenNumberIsNegative" />
         <item itemvalue="JUnit.PlaylistTest.atSecondThrowException" />
         <item itemvalue="JUnit.PlaylistTest.atSecond" />
         <item itemvalue="JUnit.PlaylistTest.ifHasSameSong" />
-        <item itemvalue="JUnit.PlaylistTest.testIfPlaylistHasOneSong" />
       </list>
     </recent_temporary>
   </component>
@@ -377,7 +378,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715263804785</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="z1h">
+      <option name="closed" value="true" />
+      <created>1715264264145</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1715264264145</updated>
+    </task>
+    <task id="LOCAL-00027" summary="z2a">
+      <option name="closed" value="true" />
+      <created>1715265298244</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1715265298244</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -413,6 +430,8 @@
     <MESSAGE value="z2" />
     <MESSAGE value="z1a-d" />
     <MESSAGE value="z1f-g" />
-    <option name="LAST_COMMIT_MESSAGE" value="z1f-g" />
+    <MESSAGE value="z1h" />
+    <MESSAGE value="z2a" />
+    <option name="LAST_COMMIT_MESSAGE" value="z2a" />
   </component>
 </project>
