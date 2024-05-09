@@ -5,11 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25bd8a96-2b38-4010-a242-30a457299cd3" name="Changes" comment="z2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/umcs/oop/music/Playlist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/umcs/oop/music/Song.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/umcs/oop/music/PlaylistTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__at_favre_lib_bcrypt_0_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__at_favre_lib_bytes_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_45_3_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_04_2024,_14_51_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_04_2024__14_51__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/umcs/oop/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/umcs/oop/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/umcs/oop/auth/Account$Persistence.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/umcs/oop/auth/Account$Persistence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/umcs/oop/auth/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/umcs/oop/auth/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/umcs/oop/database/DatabaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/umcs/oop/database/DatabaseConnection.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +32,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Record" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -32,13 +47,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -50,9 +58,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main (1).executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.pl.umcs.oop.Main.executor": "Run",
+    "JUnit.PlaylistTest.executor": "Run",
+    "JUnit.PlaylistTest.testIfNewPlaylistIsEmpty.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/lukasz/Downloads/programowanie_obiektowe",
@@ -67,15 +81,14 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="pl.umcs.oop.music" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.pl.umcs.oop.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="programowanie_obiektowe" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PlaylistTest.ifHasSameSong">
     <configuration name="pl.umcs.oop.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.umcs.oop.Main" />
       <module name="site" />
@@ -89,11 +102,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PlaylistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="site" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.umcs.oop.music.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.umcs.oop.music" />
+      <option name="MAIN_CLASS_NAME" value="pl.umcs.oop.music.PlaylistTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlaylistTest.ifHasSameSong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="site" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.umcs.oop.music.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.umcs.oop.music" />
+      <option name="MAIN_CLASS_NAME" value="pl.umcs.oop.music.PlaylistTest" />
+      <option name="METHOD_NAME" value="ifHasSameSong" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlaylistTest.testIfNewPlaylistIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="site" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.umcs.oop.music.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.umcs.oop.music" />
+      <option name="MAIN_CLASS_NAME" value="pl.umcs.oop.music.PlaylistTest" />
+      <option name="METHOD_NAME" value="testIfNewPlaylistIsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlaylistTest.testIfPlaylistHasOneSong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="site" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.umcs.oop.music.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.umcs.oop.music" />
+      <option name="MAIN_CLASS_NAME" value="pl.umcs.oop.music.PlaylistTest" />
+      <option name="METHOD_NAME" value="testIfPlaylistHasOneSong" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlaylistTest.ifHasSameSong" />
+        <item itemvalue="JUnit.PlaylistTest.testIfPlaylistHasOneSong" />
+        <item itemvalue="JUnit.PlaylistTest.testIfNewPlaylistIsEmpty" />
+        <item itemvalue="JUnit.PlaylistTest" />
         <item itemvalue="Application.pl.umcs.oop.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>

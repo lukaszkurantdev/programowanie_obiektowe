@@ -9,13 +9,10 @@
         <module name="site" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="site" target="19" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="site" options="--add-modules java.naming" />
+      <module name="site" options="" />
     </option>
   </component>
 </project>
