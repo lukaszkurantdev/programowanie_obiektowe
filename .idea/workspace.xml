@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25bd8a96-2b38-4010-a242-30a457299cd3" name="Changes" comment="z2a">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/umcs/oop/music/SongTest.java" afterDir="false" />
+    <list default="true" id="25bd8a96-2b38-4010-a242-30a457299cd3" name="Changes" comment="z2b">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/umcs/oop/music/SongTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/umcs/oop/music/SongTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,9 @@
     "JUnit.PlaylistTest.ifHasSameSong.executor": "Run",
     "JUnit.PlaylistTest.testIfNewPlaylistIsEmpty.executor": "Run",
     "JUnit.PlaylistTest.testIfPlaylistHasOneSong.executor": "Run",
+    "JUnit.SongTest.streamTest.executor": "Run",
     "JUnit.SongTest.testCorrectIndex.executor": "Run",
+    "JUnit.SongTest.testIncorrectIndex.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
@@ -78,39 +81,7 @@
       <recent name="pl.umcs.oop.music" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SongTest.testCorrectIndex">
-    <configuration name="PlaylistTest.atSecond" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="site" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.umcs.oop.music.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.umcs.oop.music" />
-      <option name="MAIN_CLASS_NAME" value="pl.umcs.oop.music.PlaylistTest" />
-      <option name="METHOD_NAME" value="atSecond" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PlaylistTest.atSecondThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="site" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.umcs.oop.music.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.umcs.oop.music" />
-      <option name="MAIN_CLASS_NAME" value="pl.umcs.oop.music.PlaylistTest" />
-      <option name="METHOD_NAME" value="atSecondThrowException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SongTest.csvTest">
     <configuration name="PlaylistTest.atSecondThrowExceptionWhenNumberIsNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="site" />
       <extension name="coverage">
@@ -127,7 +98,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaylistTest.ifHasSameSong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SongTest.csvTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="site" />
       <extension name="coverage">
         <pattern>
@@ -136,8 +107,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.umcs.oop.music" />
-      <option name="MAIN_CLASS_NAME" value="pl.umcs.oop.music.PlaylistTest" />
-      <option name="METHOD_NAME" value="ifHasSameSong" />
+      <option name="MAIN_CLASS_NAME" value="pl.umcs.oop.music.SongTest" />
+      <option name="METHOD_NAME" value="csvTest(int,java.lang.String,java.lang.String,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SongTest.streamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="site" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.umcs.oop.music.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.umcs.oop.music" />
+      <option name="MAIN_CLASS_NAME" value="pl.umcs.oop.music.SongTest" />
+      <option name="METHOD_NAME" value="streamTest(int,java.lang.String,java.lang.String,int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,13 +146,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SongTest.testIncorrectIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="site" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.umcs.oop.music.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.umcs.oop.music" />
+      <option name="MAIN_CLASS_NAME" value="pl.umcs.oop.music.SongTest" />
+      <option name="METHOD_NAME" value="testIncorrectIndex" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SongTest.csvTest" />
+        <item itemvalue="JUnit.SongTest.streamTest" />
+        <item itemvalue="JUnit.SongTest.testIncorrectIndex" />
         <item itemvalue="JUnit.SongTest.testCorrectIndex" />
         <item itemvalue="JUnit.PlaylistTest.atSecondThrowExceptionWhenNumberIsNegative" />
-        <item itemvalue="JUnit.PlaylistTest.atSecondThrowException" />
-        <item itemvalue="JUnit.PlaylistTest.atSecond" />
-        <item itemvalue="JUnit.PlaylistTest.ifHasSameSong" />
       </list>
     </recent_temporary>
   </component>
@@ -394,7 +397,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715265298244</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="z2b">
+      <option name="closed" value="true" />
+      <created>1715265790526</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1715265790526</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -432,6 +443,7 @@
     <MESSAGE value="z1f-g" />
     <MESSAGE value="z1h" />
     <MESSAGE value="z2a" />
-    <option name="LAST_COMMIT_MESSAGE" value="z2a" />
+    <MESSAGE value="z2b" />
+    <option name="LAST_COMMIT_MESSAGE" value="z2b" />
   </component>
 </project>
