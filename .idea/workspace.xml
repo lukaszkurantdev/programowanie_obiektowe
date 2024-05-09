@@ -4,25 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25bd8a96-2b38-4010-a242-30a457299cd3" name="Changes" comment="z2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/umcs/oop/music/Playlist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/umcs/oop/music/Song.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/umcs/oop/music/PlaylistTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__at_favre_lib_bcrypt_0_10_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__at_favre_lib_bytes_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_45_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="25bd8a96-2b38-4010-a242-30a457299cd3" name="Changes" comment="z1a-d">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/umcs/oop/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/umcs/oop/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/umcs/oop/auth/Account$Persistence.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/umcs/oop/auth/Account$Persistence.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/umcs/oop/auth/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/umcs/oop/auth/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/umcs/oop/database/DatabaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/umcs/oop/database/DatabaseConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/umcs/oop/music/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/umcs/oop/music/Playlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/umcs/oop/music/PlaylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/umcs/oop/music/PlaylistTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/umcs/oop/music/PlaylistTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pl/umcs/oop/music/PlaylistTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +47,12 @@
     "Application.Main (1).executor": "Run",
     "Application.Main.executor": "Run",
     "Application.pl.umcs.oop.Main.executor": "Run",
+    "JUnit.PlaylistTest.atSecond.executor": "Run",
+    "JUnit.PlaylistTest.atSecondThrowException.executor": "Run",
     "JUnit.PlaylistTest.executor": "Run",
+    "JUnit.PlaylistTest.ifHasSameSong.executor": "Run",
     "JUnit.PlaylistTest.testIfNewPlaylistIsEmpty.executor": "Run",
+    "JUnit.PlaylistTest.testIfPlaylistHasOneSong.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
@@ -88,21 +78,8 @@
       <recent name="pl.umcs.oop.music" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlaylistTest.ifHasSameSong">
-    <configuration name="pl.umcs.oop.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.umcs.oop.Main" />
-      <module name="site" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.umcs.oop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PlaylistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PlaylistTest.atSecondThrowException">
+    <configuration name="PlaylistTest.atSecond" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="site" />
       <extension name="coverage">
         <pattern>
@@ -112,7 +89,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.umcs.oop.music" />
       <option name="MAIN_CLASS_NAME" value="pl.umcs.oop.music.PlaylistTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="atSecond" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlaylistTest.atSecondThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="site" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.umcs.oop.music.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.umcs.oop.music" />
+      <option name="MAIN_CLASS_NAME" value="pl.umcs.oop.music.PlaylistTest" />
+      <option name="METHOD_NAME" value="atSecondThrowException" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -167,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlaylistTest.atSecondThrowException" />
+        <item itemvalue="JUnit.PlaylistTest.atSecond" />
         <item itemvalue="JUnit.PlaylistTest.ifHasSameSong" />
         <item itemvalue="JUnit.PlaylistTest.testIfPlaylistHasOneSong" />
         <item itemvalue="JUnit.PlaylistTest.testIfNewPlaylistIsEmpty" />
-        <item itemvalue="JUnit.PlaylistTest" />
-        <item itemvalue="Application.pl.umcs.oop.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -368,7 +362,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713450716395</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="z1a-d">
+      <option name="closed" value="true" />
+      <created>1715262632827</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1715262632827</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -402,6 +404,7 @@
     <MESSAGE value="pre lab7" />
     <MESSAGE value="z1" />
     <MESSAGE value="z2" />
-    <option name="LAST_COMMIT_MESSAGE" value="z2" />
+    <MESSAGE value="z1a-d" />
+    <option name="LAST_COMMIT_MESSAGE" value="z1a-d" />
   </component>
 </project>
