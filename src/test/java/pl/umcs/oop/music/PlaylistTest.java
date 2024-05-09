@@ -59,4 +59,21 @@ class PlaylistTest {
                 }
         );
     }
+
+    @Test
+    public void atSecondThrowExceptionWhenNumberIsNegative() {
+        Song song1 = new Song("artist1", "title1", 50);
+        Song song2 = new Song("artist2", "title2", 40);
+        Playlist playlist = new Playlist();
+        playlist.add(song1);
+        playlist.add(song2);
+        int testtimestamp = -20;
+        assertThrows(
+                IndexOutOfBoundsException.class,
+                () -> {
+                    playlist.atSecond(testtimestamp);
+                },
+                "negative number"
+        );
+    }
 }
