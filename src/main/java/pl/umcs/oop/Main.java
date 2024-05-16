@@ -5,6 +5,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) {
         ImageProcessor ip = new ImageProcessor();
+
         try {
             ip.loadImage("image.png");
             ip.increaseBrightness(100);
