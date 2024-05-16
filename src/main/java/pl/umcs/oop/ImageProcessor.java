@@ -30,6 +30,39 @@ public class ImageProcessor {
                 image.setRGB(x, y, pixel);
             }
         }
+
+
+    }
+    public void increaseBrightnessThreads(int factor) throws InterruptedException {
+        int availableProcessors = Runtime.getRuntime().availableProcessors();
+        Thread threads[] = new Thread[availableProcessors];
+        for(int i = 0; i < threads.length; i++)
+        {
+            final int finalI = i;
+            threads[i] = new Thread(() -> {
+                int start = image.getHeight() / availableProcessors * finalI;
+                int end = start + image.getHeight() / availableProcessors;
+                if(finalI == availableProcessors - 1)
+                {
+                    end = image.getHeight();
+                }
+                for(int x = start ; x < end ; x++) {
+                    for(int y = 0 ; y < image.getWidth() ; y++) {
+                        int pixel = image.getRGB(x, y);
+                        pixel = brightenPixel(pixel, factor);
+                        image.setRGB(x, y, pixel);
+                    }
+                }
+            });
+        threads[i].start();
+        }
+        for(int i = 0; i < threads.length; i++)
+        {
+            threads[i].join();
+        }
+
+
+
     }
 
     private int brightenPixel(int pixel, int factor) {
