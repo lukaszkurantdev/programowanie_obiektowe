@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25bd8a96-2b38-4010-a242-30a457299cd3" name="Changes" comment="z2b">
+    <list default="true" id="25bd8a96-2b38-4010-a242-30a457299cd3" name="Changes" comment="z2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/umcs/oop/music/SongTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/umcs/oop/music/SongTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lb6" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,6 +51,7 @@
     "JUnit.PlaylistTest.ifHasSameSong.executor": "Run",
     "JUnit.PlaylistTest.testIfNewPlaylistIsEmpty.executor": "Run",
     "JUnit.PlaylistTest.testIfPlaylistHasOneSong.executor": "Run",
+    "JUnit.SongTest.csvTest.executor": "Run",
     "JUnit.SongTest.streamTest.executor": "Run",
     "JUnit.SongTest.testCorrectIndex.executor": "Run",
     "JUnit.SongTest.testIncorrectIndex.executor": "Run",
@@ -60,7 +59,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "z9",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/lukasz/Downloads/programowanie_obiektowe",
     "onboarding.tips.debug.path": "/home/student/IdeaProjects/programowanie_obiektowe/src/Main.java",
@@ -81,19 +80,16 @@
       <recent name="pl.umcs.oop.music" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SongTest.csvTest">
-    <configuration name="PlaylistTest.atSecondThrowExceptionWhenNumberIsNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.umcs.oop.Main" />
       <module name="site" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.umcs.oop.music.*" />
+          <option name="PATTERN" value="pl.umcs.oop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.umcs.oop.music" />
-      <option name="MAIN_CLASS_NAME" value="pl.umcs.oop.music.PlaylistTest" />
-      <option name="METHOD_NAME" value="atSecondThrowExceptionWhenNumberIsNegative" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SongTest.csvTest" />
-        <item itemvalue="JUnit.SongTest.streamTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.SongTest.testIncorrectIndex" />
         <item itemvalue="JUnit.SongTest.testCorrectIndex" />
-        <item itemvalue="JUnit.PlaylistTest.atSecondThrowExceptionWhenNumberIsNegative" />
+        <item itemvalue="JUnit.SongTest.streamTest" />
+        <item itemvalue="JUnit.SongTest.csvTest" />
       </list>
     </recent_temporary>
   </component>
@@ -405,7 +401,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715265790526</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="z2">
+      <option name="closed" value="true" />
+      <created>1715267597040</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1715267597040</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -438,12 +442,12 @@
     <MESSAGE value="post lab6" />
     <MESSAGE value="pre lab7" />
     <MESSAGE value="z1" />
-    <MESSAGE value="z2" />
     <MESSAGE value="z1a-d" />
     <MESSAGE value="z1f-g" />
     <MESSAGE value="z1h" />
     <MESSAGE value="z2a" />
     <MESSAGE value="z2b" />
-    <option name="LAST_COMMIT_MESSAGE" value="z2b" />
+    <MESSAGE value="z2" />
+    <option name="LAST_COMMIT_MESSAGE" value="z2" />
   </component>
 </project>
