@@ -1,10 +1,14 @@
 package com.example.demo;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
 
 @RestController
@@ -21,12 +25,7 @@ public class RectangleController {
     }
 
     @PostMapping("addRectangle")
-    public int addRectangle() {
-        Rectangle rectangle = new Rectangle(
-                20,10,
-                100,213,
-                "red");
-
+    public int addRectangle(@RequestBody Rectangle rectangle) {
         rectangles.add(rectangle);
 
         return rectangles.size();
@@ -36,4 +35,19 @@ public class RectangleController {
     public List<Rectangle> getRectangles() {
         return rectangles;
     }
+
+    @GetMapping("rectangle/{id}")
+    public Rectangle getRectangle(@PathVariable Long id) throws IOException {
+        byte[] photo = Base64.getDecoder().decode("asdhsdahjdb37dn3ybnhsdj")
+        BufferedImage bf = ImageIO.read(
+                new ByteArrayInputStream(photo)
+        );
+        ///...
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        ImageIO.write(bf, "png", stream);
+        byte[] photo2 = stream.toByteArray();
+        String result = Base64.getEncoder().encodeToString(photo2);
+        return rectangles.get(id.intValue());
+    }
+
 }
