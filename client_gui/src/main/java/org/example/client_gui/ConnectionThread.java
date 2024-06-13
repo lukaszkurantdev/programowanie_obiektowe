@@ -32,7 +32,8 @@ public class ConnectionThread extends Thread {
                         .readValue(rawMessage, Message.class);
 
                 switch (message.type) {
-                    case Broadcast -> System.out.println(message.content);
+                    case Broadcast -> ClientReceiver.
+                            receiveBroadcast(message.content);
                 }
             }
 

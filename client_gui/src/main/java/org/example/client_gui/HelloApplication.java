@@ -18,7 +18,7 @@ public class HelloApplication extends Application {
         ConnectionThread thread = new ConnectionThread(
                 "localhost", 5001);
         thread.start();
-
+        ClientReceiver.thread = thread;
 
         TextInputDialog dialog = new TextInputDialog();
         dialog.setTitle("Logowanie");
