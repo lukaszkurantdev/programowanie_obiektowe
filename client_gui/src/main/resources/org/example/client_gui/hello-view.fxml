@@ -9,7 +9,7 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
 
-   <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" />
-   <TextField fx:id="textField" onAction="#onSendPress"/>
+   <TextArea fx:id="textArea" focusTraversable="false" prefHeight="200.0" prefWidth="200.0" />
+   <TextField fx:id="textField" onAction="#onSendPress" />
    <Button onAction="#onSendPress" text="Button" />
 </VBox>
