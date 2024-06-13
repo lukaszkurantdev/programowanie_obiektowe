@@ -9,6 +9,10 @@ public class HelloController {
     public TextArea textArea;
     public TextField textField;
 
+    public HelloController() {
+        ClientReceiver.controller = this;
+    }
+
     @FXML
     public void onSendPress() {
         String message = textField.getText();

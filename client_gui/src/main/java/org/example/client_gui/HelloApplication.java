@@ -15,6 +15,11 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
 
+        ConnectionThread thread = new ConnectionThread(
+                "localhost", 5001);
+        thread.start();
+
+
         TextInputDialog dialog = new TextInputDialog();
         dialog.setTitle("Logowanie");
         dialog.setContentText("Wpisz login");
@@ -22,6 +27,8 @@ public class HelloApplication extends Application {
         Optional<String> login = dialog.showAndWait();
 
         if(login.isPresent()) {
+            thread.login(login.get());
+
             stage.setTitle("Hello!");
             stage.setScene(scene);
             stage.show();
