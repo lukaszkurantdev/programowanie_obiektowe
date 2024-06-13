@@ -48,4 +48,9 @@ public class ConnectionThread extends Thread {
                 .writeValueAsString(message);
         writer.println(rawMessage);
     }
+
+    public void login(String login) throws JsonProcessingException {
+        Message message = new Message(MessageType.Login, login);
+        send(message);
+    }
 }
