@@ -10,10 +10,15 @@ public class ClientThread extends Thread {
     Socket client;
     Server server;
     PrintWriter writer;
+    String clientName;
 
     public ClientThread(Socket client, Server server) {
         this.client = client;
         this.server = server;
+    }
+
+    public String getClientName() {
+        return clientName;
     }
 
     public void run() {
@@ -35,6 +40,7 @@ public class ClientThread extends Thread {
 
                 switch (message.type) {
                     case Broadcast -> server.broadcast(message);
+                    case Login -> login(message.content);
                 }
             }
 
@@ -48,5 +54,11 @@ public class ClientThread extends Thread {
         String rawMessage = new ObjectMapper()
                 .writeValueAsString(message);
         writer.println(rawMessage);
+    }
+
+    public void login(String name) throws JsonProcessingException {
+        clientName = name;
+        Message message = new Message(MessageType.Broadcast, "Welcome, " + name);
+        send(message);
     }
 }
