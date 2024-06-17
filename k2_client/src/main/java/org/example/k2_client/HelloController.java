@@ -37,6 +37,7 @@ public class HelloController {
         formatter = DateTimeFormatter.ofPattern("HH:mm:ss ");
         wordList.setItems(FXCollections.observableArrayList(
                 listOfWords.stream()
+                        .sorted((word1, word2) -> word1.string.compareTo(word2.string))
                         .map((item) -> item.time.format(formatter) + item.string)
                         .toList()
         ));
