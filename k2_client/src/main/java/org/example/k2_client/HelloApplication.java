@@ -14,6 +14,8 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("Hello!");
         stage.setScene(scene);
+        ConnectionThread thread = new ConnectionThread("localhost", 5000);
+        thread.start();
         stage.show();
     }
 
