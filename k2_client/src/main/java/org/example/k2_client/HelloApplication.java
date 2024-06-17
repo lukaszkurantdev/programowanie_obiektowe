@@ -16,6 +16,8 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         ConnectionThread thread = new ConnectionThread("localhost", 5000);
         thread.start();
+        ClientReceiver.thread = thread;
+
         stage.show();
     }
 

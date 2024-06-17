@@ -25,9 +25,8 @@ public class ConnectionThread extends Thread {
             // "{"type": "", "content": ""}"
 
             while((rawMessage = reader.readLine()) != null) {
-
+                ClientReceiver.receiveWord(rawMessage);
             }
-
 
         } catch (IOException e) {
             throw new RuntimeException(e);
