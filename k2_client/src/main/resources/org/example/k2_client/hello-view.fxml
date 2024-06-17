@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER_LEFT" spacing="10.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ustaw swój kontroler" >
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+    <children>
+        <TextField fx:id="filterField" />
+        <ListView fx:id="wordList" VBox.vgrow="ALWAYS" />
+        <HBox spacing="10.0">
+            <children>
+                <Label text="Total words:" />
+                <Label fx:id="wordCountLabel" alignment="CENTER_RIGHT" text="0" />
+            </children>
+        </HBox>
+    </children>
+</VBox>
