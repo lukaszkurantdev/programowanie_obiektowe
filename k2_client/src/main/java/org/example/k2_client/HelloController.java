@@ -8,6 +8,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,9 +33,11 @@ public class HelloController {
     }
 
     public void update() {
+        DateTimeFormatter formatter;
+        formatter = DateTimeFormatter.ofPattern("HH:mm:ss ");
         wordList.setItems(FXCollections.observableArrayList(
                 listOfWords.stream()
-                        .map((item) -> item.string)
+                        .map((item) -> item.time.format(formatter) + item.string)
                         .toList()
         ));
     }
